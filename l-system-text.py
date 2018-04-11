@@ -9,6 +9,17 @@
 import sys
 
 rules = []
+antecedents = []
+subsequents = []
+seed = "empty"
+
+def process_rules():
+	antecedents, subsequents = zip(*(r.split(" -> ") for r in rules))
+	
+def print_rules():
+	print(antecedents) 
+	print(subsequents)
+
 
 print("Please enter rules in the format of A -> B one at a time. Use Ctrl+Z and Enter to end rule input.")
 while True:
@@ -17,12 +28,9 @@ while True:
 	except EOFError:
 		break
 
+print("Please enter the seed for the system.")
+seed = input('> ')
 
-
-
-#def process_rules():
-
-
-#def get_seed():
+process_rules()
 
 
