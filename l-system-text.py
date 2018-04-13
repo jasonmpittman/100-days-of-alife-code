@@ -18,38 +18,64 @@ tempSystem = []
 repeat = True
 
 def process_rules():
-	antecedents, subsequents = zip(*(r.split(" -> ") for r in rules))
+	ruleNum = 1
+	while True:
+		try:
+			print('Enter the antecendent of rule {0}'.format(ruleNum))
+			antecedents.append(input('> '))
+
+			print('Enter the subsquent of rule {0}'.format(ruleNum))
+			subsequents.append(input('> '))
+
+			ruleNum += 1
+		except EOFError:
+			break
 	
 def print_rules():
+	#print(rules)
 	print(antecedents) 
 	print(subsequents)
 
 #where an entry in the system matches an antecedent, change it to the corresponding subsequent
 def process_system(system):
-	for rule in rules:
-		for element in system:
-			tempSystem.append(re.sub(r'element', 'rule'))
+	del tempSystem[:]
+	pos = 0
 
-print("Please enter rules in the format of A -> B one at a time. Use Ctrl+Z and Enter to end rule input.")
-while True:
-	try:
-		rules.append(input('> '))
-	except EOFError:
-		break
+	for s in system:
+		#print(s)
+		for a in antecedents:
+			#print(a)
+			if s == a:
+				#print(subsequents[pos])
+				tempSystem.append(re.sub(r's', 'subsequents[pos]', s))
+				pos += 1
+
+	system = ''.join(tempSystem)
+
+	print(system)
+
 process_rules()
+#print_rules()
 
 print("Please enter the seed for the system.")
 seed = input('> ')
+system = seed
 
 #need 'main' loop for generator
 while repeat:
+
+	process_system(system)
+
 	print("Would you like to generate the next sequence in the system? [Y]es or [N]o: ")
 	choice = input()
 
 	if choice == "Y":
 		#process the system
+		print("Continuing...")
 	else:
+		print("Ending..")
 		repeat = False
+
 
 
 
