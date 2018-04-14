@@ -1,7 +1,9 @@
 # 100-days-of-alife-code
-Repository for the #100DaysOfCode challenge focused on Artificial Life programming
+Repository for my #100DaysOfCode challenge focused on Artificial Life programming
 
 # I've joined the #100DaysOfCode Challenge
+
+Based on the original 100 days of code challenge from Alexander Kallaway [here](https://github.com/kallaway/100-days-of-code)
 
 ## Contents
 

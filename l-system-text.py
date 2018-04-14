@@ -47,9 +47,11 @@ def process_system(system):
 			#print(a)
 			if s == a:
 				#print(subsequents[pos])
-				tempSystem.append(re.sub(r's', 'subsequents[pos]', s))
-				pos += 1
+				#tempSystem.append(re.sub(r's', subsequents[pos], s))
+				tempSystem.append(subsequents[pos])
+			pos += 1
 
+	#print(tempSystem)
 	system = ''.join(tempSystem)
 
 	print(system)
