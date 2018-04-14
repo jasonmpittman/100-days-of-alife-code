@@ -11,4 +11,7 @@ Worked on a text-based L-System generator in Python. The rule input, rule proces
 Continued work on the text-based L-System generator. Got the main generator loop stubbed and the logic of the system engine designed. Finish the generator tonight.
 
 ### D3R1
-Updated the challenge README and this log markdown. L-system generator main and rule processors completed. Need to revise the system engine.
+Updated the challenge README and this log markdown. L-System generator main and rule processors completed. Need to revise the system engine.
+
+### D4R1
+Completed the text-based L-System generator. Tested with A -> B; B -> ABA ruleset. Learned about the *global* keyword in python. Onto the next ALife programming project!

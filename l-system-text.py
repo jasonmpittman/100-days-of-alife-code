@@ -32,47 +32,40 @@ def process_rules():
 			break
 	
 def print_rules():
-	#print(rules)
+	print(rules)
 	print(antecedents) 
 	print(subsequents)
 
 #where an entry in the system matches an antecedent, change it to the corresponding subsequent
-def process_system(system):
+def processsystem():
 	del tempSystem[:]
-	pos = 0
+	global system
 
 	for s in system:
-		#print(s)
+		pos = 0
 		for a in antecedents:
-			#print(a)
 			if s == a:
-				#print(subsequents[pos])
-				#tempSystem.append(re.sub(r's', subsequents[pos], s))
 				tempSystem.append(subsequents[pos])
 			pos += 1
 
-	#print(tempSystem)
 	system = ''.join(tempSystem)
-
-	print(system)
+	print('system is {0}'.format(system)) 
 
 process_rules()
-#print_rules()
 
-print("Please enter the seed for the system.")
-seed = input('> ')
-system = seed
+if seed == "empty":
+	print("Please enter the seed for the system.")
+	seed = input('> ')
+	system = seed
 
 #need 'main' loop for generator
 while repeat:
-
-	process_system(system)
 
 	print("Would you like to generate the next sequence in the system? [Y]es or [N]o: ")
 	choice = input()
 
 	if choice == "Y":
-		#process the system
+		processsystem()
 		print("Continuing...")
 	else:
 		print("Ending..")
