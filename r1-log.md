@@ -15,3 +15,6 @@ Updated the challenge README and this log markdown. L-System generator main and 
 
 ### D4R1
 Completed the text-based L-System generator. Tested with A -> B; B -> ABA ruleset. Learned about the *global* keyword in python. Onto the next ALife programming project!
+
+### D5R1
+Started a simple graphical L-System generator in Python. Studied *turtle* drawing and implemented tkinter in local dev environment. Developed generator function outline.
