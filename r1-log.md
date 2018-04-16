@@ -18,3 +18,6 @@ Completed the text-based L-System generator. Tested with A -> B; B -> ABA rulese
 
 ### D5R1
 Started a simple graphical L-System generator in Python. Studied *turtle* drawing and implemented tkinter in local dev environment. Developed generator function outline.
+
+### D6R1
+Continued working on simple graphical L-System generator. Expanded on the graphics system using Turtle. Resolved a few bugs in syntax.

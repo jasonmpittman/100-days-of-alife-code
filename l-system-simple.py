@@ -8,14 +8,28 @@
 from turtle import *
 
 system = []
+antecedents = []
+subsequents = []
+seed = "empty"
+angle = 60
+distance = 5
+generations = 0
 
-def drawLSystem():
+def drawLSystem(myTurtle, angle, distance):
 	global system
-	for s in system:
+	for element in system:
 		#forward
+		if element == "A":
+			myTurtle.forward(distance)
 		#backward
+		if element == "B":
+			myTurtle.backward(distance)
 		#left
+		if element == "+":
+			myTurtle.right(angle)
 		#right
+		if element == "-":
+			myTurtle.left(angle)
 
 def process_rules():
 	ruleNum = 1
@@ -31,13 +45,39 @@ def process_rules():
 		except EOFError:
 			break
 
-def main:
+def process_seed():
+	global seed
+	#try:
+		#print('Enter the seed for the system')
+		#seed = input('> ')
+	#except EOFError:
+		#break
+
+def process_generations():
+	global generations
+#	try:
+#		print('Enter the number of generations to process')
+#		generations = input('> ')
+#	except EOFError:
+#		break
+
+def main():
 	#get the rules
+	process_rules()
+
 	#get the seed
+	process_seed()
+
 	#get the number of generations
+	process_generations()
+
 	#create the turtle
+	tort = turtle.Turtle()
+	screen = turtle.Screen()
 
 	#intialize the L-System
-	#draw the complete system for n generations
+	drawLSystem(tort, distance, angle)
 
+	wn.exitonclick()
+		
 main()
