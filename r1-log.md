@@ -21,3 +21,8 @@ Started a simple graphical L-System generator in Python. Studied *turtle* drawin
 
 ### D6R1
 Continued working on simple graphical L-System generator. Expanded on the graphics system using Turtle. Resolved a few bugs in syntax.
+
+### D7R1
+More or less completed the simple graphical L-System generator. Faithfully renders a classic l-system example (included rule as a comment). Started looking at the next project in the challenge.
+
+### D8R1
