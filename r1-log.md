@@ -26,3 +26,4 @@ Continued working on simple graphical L-System generator. Expanded on the graphi
 More or less completed the simple graphical L-System generator. Faithfully renders a classic l-system example (included rule as a comment). Started looking at the next project in the challenge.
 
 ### D8R1
+Long travel day. Worked on code outline for the next challenge project which is a simple boolean cellular automata.
