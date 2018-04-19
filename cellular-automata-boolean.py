@@ -6,49 +6,38 @@
 # Purpose: generate simple boolean cellular automata
 # Explanation: 
 generations = 0
-seed = 'empty'
+seed = []
 currentCA = []
 
 def process_seed():
-	global seed
+    global seed
 
-	while True:
-		try:
-			print('Please enter the seed for the CA')
-			seed = input('> ')
-		except EOFError:
-			break
+    while True:
+        try:
+            print('Current seed is: {0}'.format(''.join(seed)))
+            print('Please enter the seed for the CA')
+            seed.append(input('> '))
+        except EOFError:
+            break
 
 def process_generations():
-	global generations
+    global generations
 
-	while True:
-		try:
-			print('Please enter the number of generations to run')
-			generations = input('> ')
-		except EOFError:
-			break 
+    while True:
+        try:
+            print('Please enter the number of generations to run')
+            generations = input('> ')
+        except EOFError:
+            break 
 
 def process_cellular_automata():
-	#define rules
-	#process a single generation using rules
-	#print the new CA
-
+    #define rules
+    #process a single generation using rules
+    #print the new CA
+    print('Hi')
 
 def main():
-	global currentCA
-	counter = 0
-
-	process_seed()
-	process_generations()
-
-	while counter <= generations:
-
-		if generations == 0:
-			process_cellular_automata(seed)
-		else:
-			process_cellular_automata(currentCA)
-
-		counter += 1
+    process_seed()
+    process_generations()
 
 main()

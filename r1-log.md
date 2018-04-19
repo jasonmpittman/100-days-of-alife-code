@@ -27,3 +27,6 @@ More or less completed the simple graphical L-System generator. Faithfully rende
 
 ### D8R1
 Long travel day. Worked on code outline for the next challenge project which is a simple boolean cellular automata.
+
+### D9R1
+Finished boolean CA seed processor function and number of generations to run function. Fixed tab/space indentation issue. Need to get finish the graphical L-System project tomorrow.
