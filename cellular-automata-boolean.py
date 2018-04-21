@@ -8,6 +8,7 @@
 generations = 0
 seed = []
 currentCA = []
+ca = []
 
 def process_seed():
     global seed
@@ -30,14 +31,20 @@ def process_generations():
         except EOFError:
             break 
 
-def process_cellular_automata():
+def process_cellular_automata(ca):
+    global currentCA
+
     #define rules
+    
+    
     #process a single generation using rules
+    
     #print the new CA
-    print('Hi')
+    print(''.join(ca))
 
 def main():
     process_seed()
     process_generations()
+    process_cellular_automata()
 
 main()
