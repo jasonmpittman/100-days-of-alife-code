@@ -31,6 +31,5 @@ Long travel day. Worked on code outline for the next challenge project which is 
 ### D9R1
 Finished boolean CA seed processor function and number of generations to run function. Fixed tab/space indentation issue. Need to get finish the graphical L-System project tomorrow.
 
-### D10R1 (late)
-
-### D11R2 
+### D10R1 - D12R1
+Worked on boolean CA code intermittenly during conference. Also worked on L-System turtle engine a little. Read about general artificial life algorithms for more advanced cellular automata theory.

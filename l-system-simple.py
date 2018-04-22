@@ -13,7 +13,7 @@ subsequents = []
 seed = "empty"
 angle = 60
 distance = 5
-generations = 0
+#generations = 0
 
 def drawLSystem(myTurtle, angle, distance):
     #system = 'A-A++A-A-A-A++A-A++A-A++A-A-A-A++A-A-A-A++A-A-A-A++A-A++A-A++A-A-A-A++A-A++A-A++A-A-A-A++A-A++A-A++A-A-A-A++A-A-A-A++A-A-A-A++A-A++A-A++A-A-A-A++A-A-A-A++A-A-A-A++A-A++A-A++A-A-A-A++A-A-A-A++A-A-A-A++A-A++A-A++A-A-A-A++A-A++A-A++A-A-A-A++A-A++A-A++A-A-A-A++A-A-A-A++A-A-A-A++A-A++A-A++A-A-A-A++A-A++A-A++A-A-A-A++A-A++A-A++A-A-A-A++A-A-A-A++A-A-A-A++A-A++A-A++A-A-A-A++A-A++A-A++A-A-A-A++A-A++A-A++A-A-A-A++A-A-A-A++A-A-A-A++A-A++A-A++A-A-A-A++A-A-A-A++A-A-A-A++A-A++A-A++A-A-A-A++A-A-A-A++A-A-A-A++A-A++A-A++A-A-A-A++A-A++A-A++A-A-A-A++A-A++A-A++A-A-A-A++A-A-A-A++A-A-A-A++A-A++A-A++A-A-A-A++A-A'
@@ -55,7 +55,7 @@ def process_seed():
     
         except EOFError:
             break
-    
+'''    
 def process_generations():
     global generations
     while True:
@@ -64,7 +64,7 @@ def process_generations():
            generations = input('> ')
         except EOFError:
             break
-
+'''
 def main():
     global system
 
@@ -77,7 +77,7 @@ def main():
     system = seed
 
     #get the number of generations
-    process_generations()
+    #process_generations()
 
     #create the turtle
     tort = turtle.Turtle()

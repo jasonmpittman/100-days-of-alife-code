@@ -33,12 +33,19 @@ def process_generations():
 
 def process_cellular_automata(ca):
     global currentCA
+    global ca
+
+    currentCA = ca
 
     #define rules
     
     
     #process a single generation using rules
-    
+    for cell in currentCA:
+        #if rule match then change cell state
+        #else leave the cells state as-is
+
+
     #print the new CA
     print(''.join(ca))
 
