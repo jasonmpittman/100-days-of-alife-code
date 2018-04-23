@@ -15,9 +15,9 @@ def process_seed():
 
     while True:
         try:
-            print('Current seed is: {0}'.format(''.join(seed)))
+            print('Current seed is: {0}'.format(''.join(ca)))
             print('Please enter the seed for the CA')
-            seed.append(input('> '))
+            ca.append(input('> '))
         except EOFError:
             break
 
@@ -31,23 +31,47 @@ def process_generations():
         except EOFError:
             break 
 
-def process_cellular_automata(ca):
+def process_cellular_automata():
     global currentCA
     global ca
-
+    length = len(ca)
     currentCA = ca
+    print(ca)
+    print(currentCA)
 
-    #define rules
-    
-    
     #process a single generation using rules
     for cell in currentCA:
-        #if rule match then change cell state
-        #else leave the cells state as-is
+        
+        #deal with left edge
+        if cell.index == 0:
+            peekBackward = len(ca) - 1
+        else:
+            peekBackward = cell.index - 1
 
+        #deal with right edge
+        if cell.index == len(ca) - 1:
+            peekForward = 0
+        else:
+            peekForward = cell.index + 1
+
+        #if a cell is on and both neighbors are off, turn off
+        if cell == 1 and currentCA[peekForward] == 0 and currentCA[peekBackward] == 0:
+            ca[cell.index] == 0
+        
+        #if a cell is on and at least one neighbor is off, leave it be
+        if cell == 1 and currentCA[peekForward] == 0 or currentCA[peekBackward] == 0:
+            ca[cell.index] == 1
+
+        #if a cell is off and both neighers are on, turn it on
+        if cell == 0 and currentCA[peekForward] == 1 and currentCA[peekBackward] == 1:
+            ca[cell.index] == 1
+
+        #if a cell is off and at least one neighbor is on, leave it be
+        if cell == 0 and currentCA[peekForward] == 1 or currentCA[peekBackward] == 1:
+            ca[cell.index] == 0
 
     #print the new CA
-    print(''.join(ca))
+    print(ca)
 
 def main():
     process_seed()

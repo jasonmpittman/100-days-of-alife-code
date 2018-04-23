@@ -33,3 +33,7 @@ Finished boolean CA seed processor function and number of generations to run fun
 
 ### D10R1 - D12R1
 Worked on boolean CA code intermittenly during conference. Also worked on L-System turtle engine a little. Read about general artificial life algorithms for more advanced cellular automata theory.
+
+### D13R1
+Continued working on boolean CA. Built rough outline for rules engine and refined seed and generation inputs functions. Coding on travel is challenging.
+
