@@ -37,3 +37,6 @@ Worked on boolean CA code intermittenly during conference. Also worked on L-Syst
 ### D13R1
 Continued working on boolean CA. Built rough outline for rules engine and refined seed and generation inputs functions. Coding on travel is challenging.
 
+### D14R1 
+Worked on boolean CA and simple graphical L-system. Boolean ca just needs rules and L-System needs to compute final string for the turtle to eat.
+
