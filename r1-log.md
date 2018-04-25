@@ -40,3 +40,5 @@ Continued working on boolean CA. Built rough outline for rules engine and refine
 ### D14R1 
 Worked on boolean CA and simple graphical L-system. Boolean ca just needs rules and L-System needs to compute final string for the turtle to eat.
 
+### D15R1
+Decided that manually retweeting on the #100DaysOfCode hashtag was an opportunity for automation. Programmed a python retweet bot that catches the hashtag and randomly selects a response. 
