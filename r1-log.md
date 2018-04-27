@@ -42,3 +42,6 @@ Worked on boolean CA and simple graphical L-system. Boolean ca just needs rules 
 
 ### D15R1
 Decided that manually retweeting on the #100DaysOfCode hashtag was an opportunity for automation. Programmed a python retweet bot that catches the hashtag and randomly selects a response. 
+
+###D16-17R1
+Finished python-based retweet-bot that searches for #100DaysOfCode hashtag and 'retweets' with a randomly selected comment. Tested and validated execution. Updated README with basic instructions. Now, back to Artificial Life!
