@@ -32,7 +32,7 @@ Long travel day. Worked on code outline for the next challenge project which is 
 Finished boolean CA seed processor function and number of generations to run function. Fixed tab/space indentation issue. Need to get finish the graphical L-System project tomorrow.
 
 ### D10R1 - D12R1
-Worked on boolean CA code intermittenly during conference. Also worked on L-System turtle engine a little. Read about general artificial life algorithms for more advanced cellular automata theory.
+Worked on boolean CA code intermittently during conference. Also worked on L-System turtle engine a little. Read about general artificial life algorithms for more advanced cellular automata theory.
 
 ### D13R1
 Continued working on boolean CA. Built rough outline for rules engine and refined seed and generation inputs functions. Coding on travel is challenging.
@@ -45,3 +45,6 @@ Decided that manually retweeting on the #100DaysOfCode hashtag was an opportunit
 
 ###D16-17R1
 Finished python-based retweet-bot that searches for #100DaysOfCode hashtag and 'retweets' with a randomly selected comment. Tested and validated execution. Updated README with basic instructions. Now, back to Artificial Life!
+
+###D18R1
+Finished simple graphical L-System using python and turtle drawing. Maybe in the future I'll work on an engine that is char agnostic but for now the A, B, -, + drawing system works fine to illustrate the L-System concept.

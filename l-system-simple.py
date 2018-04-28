@@ -8,17 +8,30 @@
 import turtle
 
 system = []
+tempSystem = []
 antecedents = []
 subsequents = []
 seed = "empty"
 angle = 60
 distance = 5
-#generations = 0
+generations = 0
 
-def buildLsystem:
+def buildLsystem():
+    del tempSystem[:]
+    
     global system
-
+    global generations
     #take seed and build the final L-System string to feed to the turtle
+    while int(generations) > 0:
+        for s in system:
+            pos = 0
+            for a in antecedents:
+                if s == a:
+                    tempSystem.append(subsequents[pos])
+                pos += 1
+        generations = int(generations) - 1
+    
+    system = ''.join(tempSystem)
 
 def drawLSystem(myTurtle, angle, distance):
     #system = 'A-A++A-A-A-A++A-A++A-A++A-A-A-A++A-A-A-A++A-A-A-A++A-A++A-A++A-A-A-A++A-A++A-A++A-A-A-A++A-A++A-A++A-A-A-A++A-A-A-A++A-A-A-A++A-A++A-A++A-A-A-A++A-A-A-A++A-A-A-A++A-A++A-A++A-A-A-A++A-A-A-A++A-A-A-A++A-A++A-A++A-A-A-A++A-A++A-A++A-A-A-A++A-A++A-A++A-A-A-A++A-A-A-A++A-A-A-A++A-A++A-A++A-A-A-A++A-A++A-A++A-A-A-A++A-A++A-A++A-A-A-A++A-A-A-A++A-A-A-A++A-A++A-A++A-A-A-A++A-A++A-A++A-A-A-A++A-A++A-A++A-A-A-A++A-A-A-A++A-A-A-A++A-A++A-A++A-A-A-A++A-A-A-A++A-A-A-A++A-A++A-A++A-A-A-A++A-A-A-A++A-A-A-A++A-A++A-A++A-A-A-A++A-A++A-A++A-A-A-A++A-A++A-A++A-A-A-A++A-A-A-A++A-A-A-A++A-A++A-A++A-A-A-A++A-A'
@@ -60,7 +73,7 @@ def process_seed():
     
         except EOFError:
             break
-'''    
+    
 def process_generations():
     global generations
     while True:
@@ -69,7 +82,7 @@ def process_generations():
            generations = input('> ')
         except EOFError:
             break
-'''
+
 def main():
     global system
 
@@ -82,8 +95,8 @@ def main():
     system = seed
 
     #get the number of generations
-    #process_generations()
-
+    process_generations()
+    
     #create the turtle
     tort = turtle.Turtle()
     screen = turtle.Screen()
@@ -92,8 +105,10 @@ def main():
     tort.back(200)
     tort.down()
     tort.speed(9)
-
+    
     #intialize the L-System
+    buildLsystem()
+
     drawLSystem(tort, angle, distance)
 
     screen.exitonclick()
