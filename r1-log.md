@@ -48,3 +48,5 @@ Finished python-based retweet-bot that searches for #100DaysOfCode hashtag and '
 
 ###D18R1
 Finished simple graphical L-System using python and turtle drawing. Maybe in the future I'll work on an engine that is char agnostic but for now the A, B, -, + drawing system works fine to illustrate the L-System concept.
+
+###D20R1
