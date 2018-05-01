@@ -9,27 +9,33 @@
 rules = {"111": '0', "110": '0', "101": '0', "000": '0', "100": '1', "011": '1', "010": '1', "001": '1'}
 seed = ["0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","1","0","0","0",
 		"0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0"]
-generations = 20
+generations = 50
 ca = []
 
 def getNextGeneration():
 	global ca
-	nextGeneration = []
+	nextGeneration = ca
 	position = 0
 
 	for cell in ca:
-		neighborhood = getCellNeighborhood(c, pos)
+		neighborhood = getCellNeighborhood(ca, position)
 		#match neighborhood to rules and change state of current cell
-
+		for rule in rules:
+			if neighborhood == rule:
+				#change the cell state based on the rule
+				nextGeneration[position] = rules[rule]
+		position += 1
 	ca = nextGeneration
 
 def getCellNeighborhood(c, pos):
+	neighbors = []
+
 	#if cell is left edge: left neighbor is right edge
-	if c[pos] == 0:
-		leftCell = c[len(c)]
+	if pos == 0:
+		leftCell = c[len(c) - 1]
 		rightCell = c[pos + 1]
 	#if cell is right edge: right neighbor is left edge
-	elif c[pos] == len(c):
+	elif pos == len(c) - 1:
 		rightCell = c[0]
 		leftCell = c[pos - 1]
 	#otherwise, left is (index - 1) & right neighbor is (index + 1)
@@ -37,7 +43,8 @@ def getCellNeighborhood(c, pos):
 		leftCell = c[pos - 1]
 		rightCell = c[pos + 1]
 
-	neighborhood = ''.join(leftCell, c[pos], rightCell)
+	neighbors = [leftCell, c[pos], rightCell]
+	neighborhood = ''.join(neighbors)
 
 	return neighborhood
 
@@ -49,7 +56,8 @@ def main():
 	ca = seed
 	
 	while generations != 0:
-		#do stuff
+		getNextGeneration()
+		print(''.join(ca))
 		generations = generations - 1
 
 	print("Done.")

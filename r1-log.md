@@ -50,3 +50,7 @@ Finished python-based retweet-bot that searches for #100DaysOfCode hashtag and '
 Finished simple graphical L-System using python and turtle drawing. Maybe in the future I'll work on an engine that is char agnostic but for now the A, B, -, + drawing system works fine to illustrate the L-System concept.
 
 ###D20R1
+Redesigned 1d boolean cellular automata and started programming. The previous implementation grew to be clunky. One step back, two forward. Good lesson in avoiding a sunk cost fallacy. 
+
+###D21R1
+Finished core 1d boolean cellular automata programming. Need to thoroughly test the computation of neighborhoods and cell state changes tomorrow.
