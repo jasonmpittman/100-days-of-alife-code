@@ -54,3 +54,6 @@ Redesigned 1d boolean cellular automata and started programming. The previous im
 
 ###D21R1
 Finished core 1d boolean cellular automata programming. Need to thoroughly test the computation of neighborhoods and cell state changes tomorrow.
+
+###D22R1
+Started programming a simple text-based game agent using a finite state machine with three states (run, patrol, attack). 
