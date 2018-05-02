@@ -57,3 +57,6 @@ Finished core 1d boolean cellular automata programming. Need to thoroughly test 
 
 ###D22R1
 Started programming a simple text-based game agent using a finite state machine with three states (run, patrol, attack). 
+
+###D23R1
+Continued work on simple text-based game agent finite state machine. Also started work on a more simple two state FSM as a primitive example.
