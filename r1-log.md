@@ -62,3 +62,4 @@ Started programming a simple text-based game agent using a finite state machine 
 Continued work on simple text-based game agent finite state machine. Also started work on a more simple two state FSM as a primitive example.
 
 ###D24R1
+Worked on two state FSM and the simple game agent FSM today. Two state is finshed but needs testing. The simple game agent needs a few additinal methods programmed.

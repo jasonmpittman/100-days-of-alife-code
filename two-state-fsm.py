@@ -7,8 +7,8 @@
 from enum import Enum
 
 class state_type(Enum):
-    state_off = "Light turned off."
-    state_on = "Light turned on."
+    state_off = "the light is turned off."
+    state_on = "the light is turned on."
 
 class state_machine:
 
@@ -21,6 +21,9 @@ class state_machine:
 
 		if self.state == state_type.state_off:
 			return state_type.state_off.value
+
+	def update_state(self, state):
+		self.state = state
 
 def main():
 	light = state_machine(state_type.state_off)
