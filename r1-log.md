@@ -63,3 +63,6 @@ Continued work on simple text-based game agent finite state machine. Also starte
 
 ###D24R1
 Worked on two state FSM and the simple game agent FSM today. Two state is finshed but needs testing. The simple game agent needs a few additinal methods programmed.
+
+###D25R1
+Quarter of the way done with the challenge! Finished the two state FSM today. Started design for a two agent FSM to display autonomous behavior using state transitions.

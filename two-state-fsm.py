@@ -5,6 +5,8 @@
 # @license: MIT-license
 # Purpose: Demonstrate a simple two state finite state machine
 from enum import Enum
+import time
+import random
 
 class state_type(Enum):
     state_off = "the light is turned off."
@@ -23,10 +25,29 @@ class state_machine:
 			return state_type.state_off.value
 
 	def update_state(self, state):
-		self.state = state
+		if state == state_type.state_on:
+			self.state = state_type.state_off
+				
+		if state == state_type.state_off:
+			self.state = state_type.state_on
 
 def main():
 	light = state_machine(state_type.state_off)
-	print("The light is currently: {0}".format(light.current_state()))
+	print("Light is starting off")
+
+	while True:
+		try:
+			flip = random.randint(0,1)		
+
+			if flip == 0:
+				light.update_state(state_type.state_off)
+			
+			if flip == 1:
+				light.update_state(state_type.state_on)
+
+			print("The light is currently: {0}".format(light.current_state()))
+			time.sleep(5)
+		except EOFError:
+			break
 
 main()
