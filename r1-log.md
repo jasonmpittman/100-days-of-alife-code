@@ -66,3 +66,6 @@ Worked on two state FSM and the simple game agent FSM today. Two state is finshe
 
 ###D25R1
 Quarter of the way done with the challenge! Finished the two state FSM today. Started design for a two agent FSM to display autonomous behavior using state transitions.
+
+###D26R1
+Programmed state transition behavior in simple FSM agent relative to enemy presence and state. Worked on a new development environment.

@@ -6,11 +6,18 @@
 # Purpose: example of a simple finite state machine with a text-based game agent
 # Explanation:
 from enum import Enum
+import time
+import random
 
 class state_type(Enum):
     state_run = "Run Away"
     state_patrol = "Patrol"
     state_attack = "Attack"
+
+class enemy_type(Enum):
+    state_strong = "I'm a strong enemy"
+    state_weak = "I'm a weak enemy"
+    state_present = "I'm an enemy"
 
 class simple_agent:
 
@@ -21,9 +28,18 @@ class simple_agent:
         return self.state
 
     def change_state(self, state):
-        #change agent state from current to new
-        print("Changing state to {0}".format(state))
-        self.state = state
+        if state == state_type.state_patrol:
+            if enemy_type.state_strong:
+                self.state = state_type.state_run
+            elif enemy_type.state_weak:
+                self.state = state_type.state_attack        
+        elif state == state_type.state_run:
+            self.state = state_type.state_patrol
+        elif state == state_type.state_attack:
+            if enemy_type.state_strong:
+                self.state = state_type.state_run
+            elif enemy_type.state_weak:
+                self.state = state_type.state_patrol
 
     def run(self, enemy_strong):
         #do run
@@ -32,7 +48,10 @@ class simple_agent:
 
     def patrol(self, enemy_present):
         #do patrol
-        print("Patroling...")
+        if enemy_present == False:
+            print("Patroling...")
+        elif enemy_present == True:
+            print("Oh no! Enemy is here...")
 
     def attack(self, enemy_weak):
         #do attack
@@ -40,15 +59,17 @@ class simple_agent:
             print("Attacking...")
         else:
             self.run(True)
-'''
-def update_state(agent, current_state):
-    if current_state == state_type.state_run:
-        #run()
-    elif current_state == state_type.state_patrol:
-        #patrol()
-    elif current_state == state_type.state_attack:
-        #attack()
-'''
+
+def is_enemy_present():
+    present = random.randint(0,1)
+
+    if present == 0:
+        presence = False
+    elif present == 1:
+        presence = True
+
+    return presence
+
 def main():
     #create the agent object
     agent = simple_agent(state_type.state_patrol)
@@ -56,9 +77,11 @@ def main():
     #loop until we quit
     while True:
         try:
-            agent.patrol
+            if agent.current_state() == state_type.state_patrol:
+                agent.patrol(is_enemy_present())
+
+            time.sleep(5)
         except EOFError:
             break
-
 
 main()
