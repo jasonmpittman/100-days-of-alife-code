@@ -18,6 +18,7 @@ class enemy_type(Enum):
     state_strong = "I'm a strong enemy"
     state_weak = "I'm a weak enemy"
     state_present = "I'm an enemy"
+    state_missing = "There is no enemy"
 
 class simple_agent:
 
@@ -27,14 +28,19 @@ class simple_agent:
     def current_state(self):
         return self.state
 
-    def change_state(self, state):
+    def change_state(self, state, enemy_state):
         if state == state_type.state_patrol:
             if enemy_type.state_strong:
                 self.state = state_type.state_run
             elif enemy_type.state_weak:
-                self.state = state_type.state_attack        
+                self.state = state_type.state_attack
+            elif enemy_state.state_missing:
+                self.state = state_type.state_patrol        
         elif state == state_type.state_run:
-            self.state = state_type.state_patrol
+            if enemy_type.state_present:
+                self.state = state_type.state_run
+            elif enemy_type.state_missing:
+                self.state = state_type.state_patrol
         elif state == state_type.state_attack:
             if enemy_type.state_strong:
                 self.state = state_type.state_run
@@ -71,7 +77,7 @@ def is_enemy_present():
     return presence
 
 def main():
-    #create the agent object
+    #create the agent object and set default state to patrol
     agent = simple_agent(state_type.state_patrol)
 
     #loop until we quit
@@ -79,7 +85,8 @@ def main():
         try:
             if agent.current_state() == state_type.state_patrol:
                 agent.patrol(is_enemy_present())
-
+                agent.change_state(agent.current_state, enemy_type.state_weak)
+                
             time.sleep(5)
         except EOFError:
             break

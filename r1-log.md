@@ -69,3 +69,6 @@ Quarter of the way done with the challenge! Finished the two state FSM today. St
 
 ###D26R1
 Programmed state transition behavior in simple FSM agent relative to enemy presence and state. Worked on a new development environment.
+
+###D27R1
+Added more functionality to the simple FSM agent. Read about optimal state machine transition designs. Slow day.
