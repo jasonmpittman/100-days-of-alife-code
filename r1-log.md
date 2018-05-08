@@ -72,3 +72,6 @@ Programmed state transition behavior in simple FSM agent relative to enemy prese
 
 ###D27R1
 Added more functionality to the simple FSM agent. Read about optimal state machine transition designs. Slow day.
+
+###D28-29R1
+Busy days. Worked on simple FSM state transition functionality and started foundation for a two agent flocking behavior demonstration. Read a bunch about #pygame.

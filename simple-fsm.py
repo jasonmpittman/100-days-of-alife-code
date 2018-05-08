@@ -36,11 +36,11 @@ class simple_agent:
                 self.state = state_type.state_attack
             elif enemy_state.state_missing:
                 self.state = state_type.state_patrol        
-        elif state == state_type.state_run:
-            if enemy_type.state_present:
-                self.state = state_type.state_run
-            elif enemy_type.state_missing:
-                self.state = state_type.state_patrol
+        #elif state == state_type.state_run:
+            #if enemy_type.state_present:
+            #    self.state = state_type.state_run
+            #elif enemy_type.state_missing:
+            #    self.state = state_type.state_patrol
         elif state == state_type.state_attack:
             if enemy_type.state_strong:
                 self.state = state_type.state_run
@@ -51,6 +51,11 @@ class simple_agent:
         #do run
         if enemy_strong == True:
             print("Running away...")
+        
+        if enemy_type.state_present:
+            self.state = state_type.state_run
+        elif enemy_type.state_missing:
+            self.state = state_type.state_patrol
 
     def patrol(self, enemy_present):
         #do patrol
