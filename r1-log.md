@@ -75,3 +75,6 @@ Added more functionality to the simple FSM agent. Read about optimal state machi
 
 ###D28-29R1
 Busy days. Worked on simple FSM state transition functionality and started foundation for a two agent flocking behavior demonstration. Read a bunch about #pygame.
+
+###D30R1
+Continued building pygame implementation of simple two agent flocking behavior. Have the sprit animated with boundary detection working.
