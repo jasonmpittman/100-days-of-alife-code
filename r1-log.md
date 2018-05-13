@@ -79,6 +79,8 @@ Busy days. Worked on simple FSM state transition functionality and started found
 ###D30R1
 Continued building pygame implementation of simple two agent flocking behavior. Have the sprit animated with boundary detection working.
 
-###D31R1
+###D31-32R1
+Worked on function in flocking behavior demo to generate random number of agents and place each at a random (non-overlapping) location in the field. Also, starting programming simple distance calculation functions so that agents keep an average spacing once they flock.
 
-###D32R1
+###D33-D34R1
+Can generate random arrangement of 2d agents in x,y space now. Working on agent-to-agent distance caculation function and mult-agent movement function now.

@@ -16,6 +16,31 @@ class agent:
         self.velocityX = random.randint(1,10) / 10.0
         self.velocityY = random.randint(1,10) / 10.0
 
+    def away(self, agents, min_distance):
+        if len(agents) < 1:
+            return
+        
+        distance_x = 0
+        distance_y = 0
+        num_close = 0
+
+        for agent in agents:
+            distance = self.distance(agent) 
+    
+    def move(self):
+        if len(agents) < 1:
+            return
+        
+        self.x += velocity[0]
+        self.y += velocity[1]
+
+        if x + block_size > window_width or x < 0:
+            velocity[0] = -velocity[0]
+        
+        if y + block_size > window_height or y < 0:
+            velocity[1] = -velocity[1]
+        
+
 pygame.init()
 
 window_height = 800
@@ -35,7 +60,7 @@ clock = pygame.time.Clock()
 
 
 def main():
-    block_size = 20
+    block_size = 10
     stopped = False
     velocity = [1, 1]
     x = window_width / 2
@@ -45,21 +70,14 @@ def main():
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 sys.exit()
-        
-        x += velocity[0]
-        y += velocity[1]
-
-        if x + block_size > window_width or x < 0:
-            velocity[0] = -velocity[0]
-        
-        if y + block_size > window_height or y < 0:
-            velocity[1] = -velocity[1]
 
         screen.fill((0,0,0))
-        pygame.draw.rect(screen, block_color, [x, y, block_size, block_size])
+        for agent in agents:
+            agent = pygame.draw.rect(screen, white, [agent.x, agent.y, block_size, block_size])
+            agent.move(agent.x, agent.y)
         
         pygame.display.update()
-        clock.tick(60)
+        clock.tick(120)
 
 
 
