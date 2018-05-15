@@ -87,3 +87,6 @@ Can generate random arrangement of 2d agents in x,y space now. Working on agent-
 
 ###D35R1
 Slow day after travel. Worked on flocking function a little and read some about ant foraging for next project.
+
+###D36R1
+Had to regress a bit of the two agent flocking function to diagnose an animation issue. Started programming outline for complex agent flocking, including mouse input for obstacles.
