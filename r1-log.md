@@ -84,3 +84,6 @@ Worked on function in flocking behavior demo to generate random number of agents
 
 ###D33-D34R1
 Can generate random arrangement of 2d agents in x,y space now. Working on agent-to-agent distance caculation function and mult-agent movement function now.
+
+###D35R1
+Slow day after travel. Worked on flocking function a little and read some about ant foraging for next project.
