@@ -90,3 +90,6 @@ Slow day after travel. Worked on flocking function a little and read some about 
 
 ###D36R1
 Had to regress a bit of the two agent flocking function to diagnose an animation issue. Started programming outline for complex agent flocking, including mouse input for obstacles.
+
+###D37R1
+Got two agents with very basic flocking running. Need to refine border detection and add more granular flocking behavior rules.
