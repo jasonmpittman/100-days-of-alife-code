@@ -93,3 +93,6 @@ Had to regress a bit of the two agent flocking function to diagnose an animation
 
 ###D37R1
 Got two agents with very basic flocking running. Need to refine border detection and add more granular flocking behavior rules.
+
+###D38R1
+Started programming a simple agent brain that tells us how it perceives its own flocking behavior. Nice break so far.
