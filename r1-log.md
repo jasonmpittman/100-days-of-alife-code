@@ -96,3 +96,6 @@ Got two agents with very basic flocking running. Need to refine border detection
 
 ###D38R1
 Started programming a simple agent brain that tells us how it perceives its own flocking behavior. Nice break so far.
+
+###D39R1
+Worked on simple agent brain a bit more. The agents output their 2d cartesian position and facing. Next up: finishing the distance calculations and movement

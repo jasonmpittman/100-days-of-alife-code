@@ -10,6 +10,7 @@ from enum import Enum
 
 num_agents = 2
 agents = []
+running = True
 
 class facing(Enum):
     north = "North"
@@ -26,7 +27,7 @@ class agent:
         self.distance = 0
 
     def get_position(self):
-        print("Agent {0} is at: {1} {2}".format(self.agent_id, self.x, self.y))
+        print("Agent {0} is at {1} {2} facing {3}".format(self.agent_id, self.x, self.y, self.facing))
 
     def get_facing(self):
         if self.facing == 'North':
@@ -51,10 +52,8 @@ class agent:
 
     def get_distance(self, agents):
         for agent in agents:
-            distance = calc_distance(agent)
+            agent.distance = 1
         
-        return distance
-
     def move_away(self):
         if self.x and self.y < 4:
             self.x += 1
@@ -66,8 +65,17 @@ class agent:
             self.y -= 1      
 
 def main():
-
+    face = facing.north.value
+    
     for i in range(num_agents):
-        agents.append(agent(random.randint(1,20), random.randint(1,20), i, face)) 
+        agents.append(agent(random.randint(1,20), random.randint(1,20), i, face))
+
+    while running:
+        for a in agents:
+            a.get_position()
+
+        #if distance between agents is 'big', move closer.
+        #if distance between agents is 'small', move away.
+        #otherwise, just move together 
 
 main()
