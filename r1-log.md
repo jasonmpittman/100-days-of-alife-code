@@ -99,3 +99,6 @@ Started programming a simple agent brain that tells us how it perceives its own 
 
 ###D39R1
 Worked on simple agent brain a bit more. The agents output their 2d cartesian position and facing. Next up: finishing the distance calculations and movement
+
+###D40R1 
+Added code to differentiate between lead agent and followers in the simple agent brain program. 

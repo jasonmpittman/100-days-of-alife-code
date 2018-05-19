@@ -6,6 +6,7 @@
 # Purpose: simple agent 'brain' output of flocking behavior
 # Explanation:
 import random
+import time
 from enum import Enum
 
 num_agents = 2
@@ -64,16 +65,32 @@ class agent:
             self.x -= 1
             self.y -= 1      
 
+def elect_leader():
+    leader_index = random.randint(0, num_agents - 1)
+    return leader_index
+    
 def main():
     face = facing.north.value
-    
+    followers = []
+    leader = []
+    lead_agent = elect_leader()
+
     for i in range(num_agents):
         agents.append(agent(random.randint(1,20), random.randint(1,20), i, face))
 
-    while running:
-        for a in agents:
-            a.get_position()
+    #separate agents into leader and followers
+    leader = agents[lead_agent]
+    agents.pop(lead_agent)
+    followers = agents
 
+
+    while running:
+        for follower in followers:
+            follower.get_position()
+            
+            time.sleep(3)
+        
+        leader.get_position()
         #if distance between agents is 'big', move closer.
         #if distance between agents is 'small', move away.
         #otherwise, just move together 
