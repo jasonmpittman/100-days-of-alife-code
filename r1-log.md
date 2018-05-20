@@ -101,4 +101,7 @@ Started programming a simple agent brain that tells us how it perceives its own 
 Worked on simple agent brain a bit more. The agents output their 2d cartesian position and facing. Next up: finishing the distance calculations and movement
 
 ###D40R1 
-Added code to differentiate between lead agent and followers in the simple agent brain program. 
+Added code to differentiate between lead agent and followers in the simple agent brain program. Needed this so that movement can be relative to a fixed, rational point in the grid.
+
+###D41R1
+Wanted a break from Artificial Life. Started https://github.com/jasonmpittman/100-days-of-code as a repo to hold general programming. 
