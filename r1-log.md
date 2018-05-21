@@ -105,3 +105,6 @@ Added code to differentiate between lead agent and followers in the simple agent
 
 ###D41R1
 Wanted a break from Artificial Life. Started https://github.com/jasonmpittman/100-days-of-code as a repo to hold general programming. 
+
+###D42R1
+Finished essential programming for a visualization of the Pareto principle using simulated exchange of abstract currency. Neat little exercise to practice randomization and historgrams. 
