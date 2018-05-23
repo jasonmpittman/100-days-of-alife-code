@@ -108,3 +108,6 @@ Wanted a break from Artificial Life. Started https://github.com/jasonmpittman/10
 
 ###D42R1
 Finished essential programming for a visualization of the Pareto principle using simulated exchange of abstract currency. Neat little exercise to practice randomization and historgrams. 
+
+###D43-44R1
+Finished histogram creation for Pareto simulation. Worked on a small bug in value distribution in the player class. Read about matplotlib plot functions.
