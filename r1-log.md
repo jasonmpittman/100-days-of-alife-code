@@ -111,3 +111,6 @@ Finished essential programming for a visualization of the Pareto principle using
 
 ###D43-44R1
 Finished histogram creation for Pareto simulation. Worked on a small bug in value distribution in the player class. Read about matplotlib plot functions.
+
+###D45R1
+Resolved bug in player class value distribution in the Pareto simulation. Wondering if I should go back to ALife or keep up general programming.
