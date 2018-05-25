@@ -114,3 +114,6 @@ Finished histogram creation for Pareto simulation. Worked on a small bug in valu
 
 ###D45R1
 Resolved bug in player class value distribution in the Pareto simulation. Wondering if I should go back to ALife or keep up general programming.
+
+###D46R1
+Programmed a two group effect size calculator. The calculator works but has a arithmetic bug in the effect_size function. Small scope projects like this are a great break from larger efforts.
