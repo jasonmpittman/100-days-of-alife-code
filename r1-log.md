@@ -117,3 +117,6 @@ Resolved bug in player class value distribution in the Pareto simulation. Wonder
 
 ###D46R1
 Programmed a two group effect size calculator. The calculator works but has a arithmetic bug in the effect_size function. Small scope projects like this are a great break from larger efforts.
+
+###D47R1
+Fixed the arithmetic bug in the two group effect size calculator. Final build is in https://github.com/jasonmpittman/100-days-of-code
