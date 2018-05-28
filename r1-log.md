@@ -123,3 +123,6 @@ Fixed the arithmetic bug in the two group effect size calculator. Final build is
 
 ###D48R1
 Programmed an independent t test calculator. Computes t-ratio and degrees of freedom so you can look up p against alpha. Final build in https://github.com/jasonmpittman/100-days-of-code
+
+###D49R1
+Programmed a paired t test calculator as a follow up to D48. Final build available in https://github.com/jasonmpittman/100-days-of-code. Traveling this week so may not update again for a few days.
