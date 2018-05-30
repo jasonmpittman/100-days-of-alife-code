@@ -126,3 +126,6 @@ Programmed an independent t test calculator. Computes t-ratio and degrees of fre
 
 ###D49R1
 Programmed a paired t test calculator as a follow up to D48. Final build available in https://github.com/jasonmpittman/100-days-of-code. Traveling this week so may not update again for a few days.
+
+###D50R1 
+From a hotel in AZ...programmed a standard (z) score calculator. These small projects are just plain fun. Final build available in https://github.com/jasonmpittman/100-days-of-code.
