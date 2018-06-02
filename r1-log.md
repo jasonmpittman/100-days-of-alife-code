@@ -129,3 +129,6 @@ Programmed a paired t test calculator as a follow up to D48. Final build availab
 
 ###D50R1 
 From a hotel in AZ...programmed a standard (z) score calculator. These small projects are just plain fun. Final build available in https://github.com/jasonmpittman/100-days-of-code.
+
+###D51R1-D53R1
+Two days on the road without internet; coded but not committed until now. Worked on a list of calculators to develop and maybe turn into a robust simulation for teaching stats. Worked on an ANOVA calculator but not finsihed. 
