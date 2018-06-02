@@ -132,3 +132,6 @@ From a hotel in AZ...programmed a standard (z) score calculator. These small pro
 
 ###D51R1-D53R1
 Two days on the road without internet; coded but not committed until now. Worked on a list of calculators to develop and maybe turn into a robust simulation for teaching stats. Worked on an ANOVA calculator but not finsihed. 
+
+###D54R1
+Completed the ANOVA calculator. Worked a bit on larger statistical ed plan. May put that aside for a bit and get back to ALife stuff.
