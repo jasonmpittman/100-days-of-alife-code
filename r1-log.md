@@ -135,3 +135,9 @@ Two days on the road without internet; coded but not committed until now. Worked
 
 ###D54R1
 Completed the ANOVA calculator. Worked a bit on larger statistical ed plan. May put that aside for a bit and get back to ALife stuff.
+
+###D55R1
+Chill day reading some ALife research and working on plan for the statistics ed program.
+
+###D56R1-D57R1
+Worked on a wilcoxon signed rank test calculator. I'm addicted to programming these simple calculators now. 
