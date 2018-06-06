@@ -141,3 +141,6 @@ Chill day reading some ALife research and working on plan for the statistics ed 
 
 ###D56R1-D57R1
 Worked on a wilcoxon signed rank test calculator. I'm addicted to programming these simple calculators now. 
+
+###D58R1
+Worked some more on the wilcoxon signed rank test. Starting thinking about procedural generation and mazes for some reason.
