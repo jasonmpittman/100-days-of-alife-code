@@ -144,3 +144,6 @@ Worked on a wilcoxon signed rank test calculator. I'm addicted to programming th
 
 ###D58R1
 Worked some more on the wilcoxon signed rank test. Starting thinking about procedural generation and mazes for some reason.
+
+###D59R1
+Completed the wilcoxon signed rank calculator. The ranking of abs values while retaining signs was a good challenge. Back to ALife starting tomorrow!
