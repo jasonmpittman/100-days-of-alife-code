@@ -147,3 +147,9 @@ Worked some more on the wilcoxon signed rank test. Starting thinking about proce
 
 ###D59R1
 Completed the wilcoxon signed rank calculator. The ranking of abs values while retaining signs was a good challenge. Back to ALife starting tomorrow!
+
+###D60R1
+Back to ALife. Starting working on a simple #GeneticAlgorithm to evolve matches to a given string.
+
+###D61R1
+Completed the simple genetic algorithm program that evolves a match to a given string. May work on a maximization GA next.
