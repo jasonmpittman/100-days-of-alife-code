@@ -153,3 +153,6 @@ Back to ALife. Starting working on a simple #GeneticAlgorithm to evolve matches 
 
 ###D61R1
 Completed the simple genetic algorithm program that evolves a match to a given string. May work on a maximization GA next.
+
+###D62R1-D63R1
+Read about genetic algorithms some more. Meanwhile, started programming a simple game of life generator based on Conway's seminal work.
