@@ -10,26 +10,47 @@ import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 
 
-def compute_survival(x, y, universe):
-    num_neighbors = np.sum(universe[x - 1 : x + 2, y - 1 : y + 2]) - universe[x, y]
+def compute_survival(x, y, world):
+    num_neighbors = np.sum(world[x - 1 : x + 2, y - 1 : y + 2]) - world[x, y]
 
-    if universe[x, y] and not 2 <= num_neighbors < = 3:
+    if world[x, y] and not 2 <= num_neighbors <= 3:
         return 0
     elif num_neighbors == 3:
         return 1
     
-    return universe[x, y]
+    return world[x, y]
 
+def compute_generation(world):
+    new_world = np.copy(world)
 
-universe = np.zeros((6,6))
-beacon = [[1, 1, 0, 0],
-        [1, 1, 0, 0],
-        [0, 0, 1, 1],
-        [0, 0, 1, 1]]
+    for i in range(world.shape[0]):
+        for j in range(world.shape[1]):
+            new_world[i, j] = compute_survival(i, j, world)
+    
+    return new_world
 
-universe[1:5, 1:5] = beacon
+def run_world():
+    generations = 50
+    world = np.zeros((6,6))
+    beacon = [[1, 1, 0, 0],
+            [1, 1, 0, 0],
+            [0, 0, 1, 1],
+            [0, 0, 1, 1]]
 
-plt.imshow(universe, cmap='binary')
-plt.show()
+    world[1:5, 1:5] = beacon
+
+    figure = plt.figure(dpi=200)
+    plt.axis("off")
+    ims = []
+
+    for i in range(generations):
+
+        ims.append((plt.imshow(world, cmap='binary'),))
+        world = compute_generation(world)
+
+    im_ani = animation.ArtistAnimation(figure, ims, interval=300, repeat_delay=3000, blit=True)
+    #write the gif
+
+run_world()
 
 

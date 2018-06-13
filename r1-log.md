@@ -156,3 +156,6 @@ Completed the simple genetic algorithm program that evolves a match to a given s
 
 ###D62R1-D63R1
 Read about genetic algorithms some more. Meanwhile, started programming a simple game of life generator based on Conway's seminal work.
+
+###D64R1
+Continued programming the simple game of life generator. Almost finished - just need to output the animation.
