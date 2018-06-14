@@ -159,3 +159,6 @@ Read about genetic algorithms some more. Meanwhile, started programming a simple
 
 ###D64R1
 Continued programming the simple game of life generator. Almost finished - just need to output the animation.
+
+###D65R1
+Completed the simple game of life program. Good exercise to explot using matplotlib to animate. The engine only uses a 'beacon' life seed. Next version will implement a larger grid and all Conway defined life seeds.

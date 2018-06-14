@@ -3,7 +3,7 @@
 # Created on 06/11/2018
 # @author: Jason M. Pittman
 # @license: MIT-license
-# Purpose: demonstrate simple genetic algorithm to evolve a match to a given string
+# Purpose: demonstrate a simple game of life demo based on Conway's Game of Life
 # Explanation: 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -50,6 +50,7 @@ def run_world():
 
     im_ani = animation.ArtistAnimation(figure, ims, interval=300, repeat_delay=3000, blit=True)
     #write the gif
+    plt.show()
 
 run_world()
 
