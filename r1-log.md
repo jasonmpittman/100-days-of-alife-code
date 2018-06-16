@@ -162,3 +162,6 @@ Continued programming the simple game of life generator. Almost finished - just 
 
 ###D65R1
 Completed the simple game of life program. Good exercise to explot using matplotlib to animate. The engine only uses a 'beacon' life seed. Next version will implement a larger grid and all Conway defined life seeds.
+
+###D66R1-D67R1
+Programmed a simple 2 layer neural network that demonstrates backpropogation prediction of 0 or 1 based on three inputs of 0 and 1.
