@@ -165,3 +165,6 @@ Completed the simple game of life program. Good exercise to explot using matplot
 
 ###D66R1-D67R1
 Programmed a simple 2 layer neural network that demonstrates backpropogation prediction of 0 or 1 based on three inputs of 0 and 1.
+
+###D68R1
+Fathers day so kept it simple. Programmed a demo of standard binomial probability using coin flips (prob of 2 heads from 10 flips).
