@@ -168,3 +168,6 @@ Programmed a simple 2 layer neural network that demonstrates backpropogation pre
 
 ###D68R1
 Fathers day so kept it simple. Programmed a demo of standard binomial probability using coin flips (prob of 2 heads from 10 flips).
+
+###D69R1-D71R1
+Got a new standing desk and wanted a timer to track my stand/sit cycles. Spent one day reading the relevant science and one day programming the timer application.
