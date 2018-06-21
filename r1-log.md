@@ -171,3 +171,6 @@ Fathers day so kept it simple. Programmed a demo of standard binomial probabilit
 
 ###D69R1-D71R1
 Got a new standing desk and wanted a timer to track my stand/sit cycles. Spent one day reading the relevant science and one day programming the timer application.
+
+###D72R1
+Added sound signals to alert user to sit-stand-move state changes. 
